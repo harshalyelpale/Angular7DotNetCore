@@ -1,22 +1,24 @@
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <div class="navbar-brand">
-        Sudipta Chaudhari
-      </div>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a class="active" routerLink="">Home</a></li>
-        <li><a class="active" routerLink="">Fetch Data</a></li>
-      </ul>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img src="../assets/SiteIcon.png" class="headerLogo" href="#" />
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/fetch-data">Fetch Data</a>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>
 <div class="container body-content">
   <router-outlet></router-outlet>
   <hr />
   <footer>
-    <p>Angular 7 .Net Core WebApi - Sudipta Chaudhari</p>
+    <p>Angular 7 .Net Core WebApi - Sudipta Chaudhari (<a href="http://sudiptachaudhari.com" target="_blank">http://sudiptachaudhari.com</a>)</p>
   </footer>
 </div>
